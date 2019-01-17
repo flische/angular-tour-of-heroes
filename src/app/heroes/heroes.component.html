@@ -1,31 +1,20 @@
 
-<!-- <div *ngIf="selectedHero">
-  <h2>{{selectedHero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedHero.id}}</div>
-  <div>
-    <label>
-      <input [(ngModel)]="selectedHero.name" placeholder="name">
-    </label>
-  </div>
-</div> -->
-
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
-
+<h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
-      [class.selected]="hero === selectedHero"
-      (click)="onSelect(hero)"
-      [class.thor]="selectedHero.id === 11"
-      [class.loki]="selectedHero.id === 12"
-      [class.hulk]="selectedHero.id === 13"
-      [class.blackwidow]="selectedHero.id === 14"
-      [class.panther]="selectedHero.id === 15"
-      [class.captainamerica]="selectedHero.id === 16"
-      [class.ironman]="selectedHero.id === 17"
-      [class.spiderman]="selectedHero.id === 18"
-      [class.daredevil]="selectedHero.id === 19"
-      [class.punisher]="selectedHero.id === 20"
-      >
+      [class.thor]="hero.id === 11"
+      [class.loki]="hero.id === 12"
+      [class.hulk]="hero.id === 13"
+      [class.blackwidow]="hero.id === 14"
+      [class.panther]="hero.id === 15"
+      [class.captainamerica]="hero.id === 16"
+      [class.ironman]="hero.id === 17"
+      [class.spiderman]="hero.id === 18"
+      [class.daredevil]="hero.id === 19"
+      [class.punisher]="hero.id === 20"
+  >
+    <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
   </li>
 </ul>
