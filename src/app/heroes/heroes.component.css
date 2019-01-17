@@ -1,103 +1,136 @@
 /* HeroesComponent's private CSS styles */
-.selected {
-    background-color: rgb(213, 89, 110) !important;
-    color: white;
-  }
-  .heroes {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 15em;
-  }
-  .heroes li {
-    cursor: pointer;
-    position: relative;
-    left: 0;
-    background-color: rgb(238, 238, 238);
-    margin: .5em;
-    padding: .3em 0;
-    height: 1.6em;
-    border-radius: 4px;
-  }
-  .heroes li.selected:hover {
-    /* background-color: rgb(15, 56, 238) !important; */
-    /* color: white; */
-  }
-  .heroes li:hover {
-    color: white;
-    background-color: rgb(188, 203, 235);
-    left: .1em;
-  }
-  .heroes .text {
-    position: relative;
-    top: -3px;
-    /* text-align: center; */
-  }
-  .heroes .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color: #607D8B;
-    line-height: 1em;
-    position: relative;
-    left: -1px;
-    top: -4px;
-    height: 1.8em;
-    margin-right: .8em;
-    border-radius: 4px 0 0 4px;
-  }
 
-  li.selected.loki {
-    background-color: limegreen !important;
-    color: black;
-  }
+h2 {
+  text-align: center;
+}
 
-  li.selected.punisher {
-    background-color:black !important;
-    color: rgba(255, 255, 255, 0.712);
-  }
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
 
-  li.selected.hulk {
-    background-color:rgb(63, 58, 58) !important;
-    color: limegreen;
-  }
+.heroes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: rgb(238, 238, 238);
+  margin: .75em;
+  padding: 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
 
-  li.selected.thor {
-    background-color: blue !important;
-    color: yellow;
-  }
+.heroes li:hover {
+  color: white;
+  background-color: rgb(188, 203, 235);
+  left: .1em;
+}
 
-  li.selected.captainamerica {
-    background-color: blue !important;
-    color: red;
-  }
+.heroes a {
+  color: #888;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 250px;
+}
+  
+.heroes a:hover {
+  color:#607D8B;
+}
 
-  li.selected.daredevil {
-    background-color: rgb(165, 20, 20) !important;
-    color: black;
-  }
+/* .heroes .text {
+  position: relative;
+  top: -3px;
+} */
 
-  li.selected.ironman {
-    background-color: red !important;
-    color: yellow;
-  }
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
 
-  li.selected.blackwidow {
-    background-color: black !important;
-    color: rgb(173, 24, 24);
-  }
+.loki a:hover {
+  background-color: limegreen !important;
+  color: black;
+  height: 105%;
+  width: 100%;
+}
 
-  li.selected.panther {
-    background-color: black !important;
-    color: white;
-  }
+.punisher a:hover{
+  background-color:black !important;
+  color: rgba(255, 255, 255, 0.712);
+  height: 105%;
+  width: 100%;
+}
 
-  li.selected.spiderman {
-    background-color: red !important;
-    color: blue;
-  }
+.hulk a:hover {
+  background-color:rgb(63, 58, 58) !important;
+  color: limegreen;
+  height: 105%;
+  width: 100%;
+}
 
-  ul.heroes {
-    margin: auto;
-  }
+.thor a:hover {
+  background-color: blue !important;
+  color: yellow;
+  height: 105%;
+  width: 100%;
+}
+
+.captainamerica a:hover {
+  background-color: blue !important;
+  color: red;
+  height: 105%;
+  width: 100%;
+  /* left: .1em; */
+}
+
+.daredevil a:hover{
+  background-color: rgb(165, 20, 20) !important;
+  color: black;
+  height: 105%;
+  width: 100%;
+}
+
+.ironman a:hover{
+  background-color: red !important;
+  color: yellow;
+  height: 105%;
+  width: 100%;
+}
+
+.blackwidow a:hover{
+  background-color: black !important;
+  color: rgb(173, 24, 24);
+  height: 105%;
+  width: 100%;
+}
+
+.panther a:hover {
+  background-color: black !important;
+  color: white;
+  height: 105%;
+  width: 100%;
+}
+
+.spiderman a:hover{
+  background-color: red !important;
+  color: blue;
+  height: 105%;
+  width: 100%;
+}
+
+ul.heroes {
+  margin: auto;
+}
