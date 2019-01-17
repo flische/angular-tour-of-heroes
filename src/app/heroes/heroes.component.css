@@ -97,3 +97,7 @@
     background-color: red !important;
     color: blue;
   }
+
+  ul.heroes {
+    margin: auto;
+  }
