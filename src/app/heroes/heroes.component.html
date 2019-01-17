@@ -8,12 +8,13 @@
     </label>
   </div>
 </div> -->
+
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
 
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
-      (click)="onSelect(hero)"
       [class.selected]="hero === selectedHero"
+      (click)="onSelect(hero)"
       [class.thor]="selectedHero.id === 11"
       [class.loki]="selectedHero.id === 12"
       [class.hulk]="selectedHero.id === 13"
