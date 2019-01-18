@@ -1,5 +1,15 @@
 
-<h2>My Heroes</h2>
+<h2>Marvel Heroes</h2>
+
+<div class="center">
+    <label class="create-label">Create a New Hero Below:<br/>
+      <input class="create-input" #heroName />
+    </label>
+    <br/>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(heroName.value); heroName.value=''"> Create</button>
+</div>
+
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
       [class.thor]="hero.id === 11"
@@ -16,5 +26,7 @@
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
+    <button class="delete" title="delete hero"
+    (click)="delete(hero)">x</button>
   </li>
 </ul>
